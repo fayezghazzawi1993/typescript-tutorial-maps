@@ -18,6 +18,16 @@ export class CustomMap {
     }
   }
 
+  addMarker(mappable: User | Company): void {
+    new google.maps.Marker({
+      map: this.googleMap,
+      position: {
+        lat: mappable.location.lat,
+        lng: mappable.location.lng,
+      },
+    });
+  }
+
   addUserMarker(user: User): void {
     new google.maps.Marker({
       map: this.googleMap,
@@ -28,13 +38,13 @@ export class CustomMap {
     });
   }
 
-  addCompanyMarker(company: Company): void {
-    new google.maps.Marker({
-      map: this.googleMap,
-      position: {
-        lat: company.location.lat,
-        lng: company.location.lng,
-      },
-    });
-  }
+  // addCompanyMarker(company: Company): void {
+  //   new google.maps.Marker({
+  //     map: this.googleMap,
+  //     position: {
+  //       lat: company.location.lat,
+  //       lng: company.location.lng,
+  //     },
+  //   });
+  // }
 }

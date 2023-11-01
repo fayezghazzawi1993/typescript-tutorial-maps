@@ -3,6 +3,6 @@
     "typescript": "^5.2.2"
   },
   "dependencies": {
-    "@faker-js/faker": "github:faker-js/faker"
+    "@faker-js/faker": "^8.2.0"
   }
 }

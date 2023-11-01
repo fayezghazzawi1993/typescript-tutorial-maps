@@ -1,5 +1,8 @@
 {
   "devDependencies": {
     "typescript": "^5.2.2"
+  },
+  "dependencies": {
+    "@faker-js/faker": "github:faker-js/faker"
   }
 }
